@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}
+    My Profile
+{% endblock %}
+{% block main %}
+    <img src="{{ url_for('static', filename='IMG-20210506-WA0014.jpg')}}" alt="Picture of myself in my graduation garments." class="profile">
+    <h1 class="format">Shaedane White</h1>
+    <h3>@shaewhite</h3>
+    <h3>Kingston, Jamaica</h3>
+    <h3>{{ date_user_joined }}</h3>
+    <p class="pad">I am a student of the University of the West Indies, Faculty of Science, Department of Computing. I am available for any web development projects.</p>
+    <button class="btn">Follow</button>
+{% endblock %}
